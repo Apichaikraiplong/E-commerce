@@ -51,7 +51,7 @@ public class CartItem {
      */
     public void increaseQuantity(int amount) {
         if (amount > 0) {
-            this.quantity = amount;
+            this.quantity += amount;
         }
         checkRep(); // ตรวจสอบหลังการเปลี่ยนแปลงสถานะ
     }
