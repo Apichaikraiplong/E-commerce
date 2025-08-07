@@ -40,7 +40,7 @@ public class ProductCatalog {
       * @param product สินค้าที่ต้องการเพิ่ม
       */
      public void addProduct(Product product) {
-        if (product != null && (products.contains(product))) {
+        if (product != null && !products.contains(product)) {
             products.add(product);
         }
         checkRep();
